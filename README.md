@@ -1,30 +1,41 @@
-# TCSS 588 Ensemble Project Winter  2019
+# Rahul_100
 
-#### This repository contains multiple the code to train tree and extra tree classifiers for multiple data sets to determine 
-relevant genes for those data sets. 
+This notebook is for the bonus assignment. 
 
-Because the work required for every data set is the same, and I wanted to examine the results as the code ran, I created 
-a separate notebook per data set. Therefore, because we worked on 5 data sets, this notebook has 5 data sets.
+This notebook contains the code for:
 
-There is documentation in each notebook also, explaining the steps, and each notebook to summarize, does the following:
+a. Training the decision tree and the extra tree
+b. Performing visualizations of the data using python
 
+## Description
 
-a. Loads the training data for either the 1k, 10k, 2.5k or 5k or 100 data set, based on which note book it is.
-b. Splits the data using K Folds, with k = 5
-c. Trains a tree and extra tree classifier for the 5 folds to calculate the accuracy for every fold and then also report the average accuracy.
-d. Determine which genes were most important in each fold.
-e. Also every notebook creates data frames to store the results and then creates multiple .csv files to store the results.
+This notebook buiilds on the models trained on the 100 genes data set and then peform visualizations of the results.
+I initially wanted to focus on the 1000 genes data set or even the 5000 genes data set, however what was happening was the
+visualizations were pretty expensive to compute and pretty messy. Therefore, I simply focused on the 100 gene data set.
 
 
-### Dependencies
+## PACKAGE DEPENDENCIES
 
-Here are the common dependencies for every notebook:
-### Data Files
+The following packages are required to run this notebook to view the visualizations:
 
-#### 1. The file  data\\aml.data.RNA.1k.csv - this has the  data
-#### 2. The file data\\aml.data.labels.csv  - this file  has the Y values - the class we would like to predict
+a. seaborn (for the heatmap)
+b. pydotplus
+c. matplotlib
+d. pandas
+e. numpy
 
-### Packages
+## SOFTWARE DEPENDENCIES:
 
-#### This code depends on the following python packages:
-#####  os, sklearn, pandas, 
+You need to have Graphviz installed. This is required by Python to build the visualization of the tree model.
+To set up your machine for this:
+
+a. Download Graphviz  from here: https://graphviz.gitlab.io/download/
+b. Add a path to the installed location to the PATH environment variable.
+
+
+## RUNNING THE notebook
+
+Open the notebook using jupyter notebooks.
+Run All the cells. This will train the models and then create the plots for you.
+
+Please let me know if you have any questions!
